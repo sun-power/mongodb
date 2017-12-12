@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* start样式的重构 */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p,marquee,
+table,tr,td,thead,tbody,tfoot,hgroup,
+header,section,footer,nav,article,aside,video,audio,embed,
+datalist,details,legend,figcaption,figure {
+    margin: 0px;
+    padding: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /*-moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;*/
+    /*-webkit-text-size-adjust: none;  使用webkit的私有属性，让字体大小不受设备终端的调整，可定义字体大小小于12px */
+}
+
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+span,b,s,u,i,em,label {
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    outline: none;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus {
+    outline: none;
+    border: 0px;
+}
+
+a,
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+/* end样式的重构 */
+
+.clearance {
+    display: inline-table;/* ie8+浏览器 */
+    font-size: 0; /* 所有浏览器 */
+    *word-spacing: -1px; /* 使用word-spacing 修复 IE6、7 中始终存在的 1px 空隙，减少单词间的空白（即字间隔） */
+    letter-spacing: normal; /* 设置字母、字间距为0 */
+    word-spacing: normal; /* 设置单词、字段间距为0 */
+}
+
+.clearance span {
+    font-size: 12px;
+    letter-spacing: normal; /* 设置字母、字间距为0 */
+    word-spacing: normal; /* 设置单词、字段间距为0 */
+}
+
+.absolute {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.container1 {
+    width: 640px;
+    height: 530px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}

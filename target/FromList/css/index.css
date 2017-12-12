@@ -1,0 +1,30 @@
+table, tr, th, td {
+    border: 1px solid;
+}
+
+table {
+    width: 800px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+button{
+    left: 10px;
+    margin:20px;
+}
+
+.box{
+    width: 793px;
+    height: 60px;
+    border: 1px solid;
+    margin: 20px auto;
+    line-height: 60px;
+}
